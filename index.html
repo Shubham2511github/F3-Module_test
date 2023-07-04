@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IP Address</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./style.css">
+   
+</head>
+
+<body>
+    <h2>My Public IP ADDRESS : </h2>
+    <button id="getIPButton">Get Data</button>
+    <div id="entire-content"  style="display: none;">
+    <div id="container" >
+        <div class="row">
+            <span>Lat:</span>
+            <p class="lat"></p>
+        </div>
+        <div class="row">
+            <span>City:</span>
+            <p class="city"></p>
+        </div>
+        <div class="row">
+            <span>Organisation:</span>
+            <p class="organisation"></p>
+        </div>
+        <div class="row">
+            <span>Long:</span>
+            <p class="long"></p>
+        </div>
+        <div class="row">
+            <span>Region:</span>
+            <p class="region"></p>
+        </div>
+        <div class="row">
+            <span>Hostname:</span>
+            <p class="hostman"></p>
+        </div>
+    </div>
+    <div id="map"></div><br><br>
+    <div class="details-container" >
+        <div class="detail-item">
+            <span>Time Zone:</span>
+            <p class="time-zone"></p>
+        </div>
+        <div class="detail-item">
+            <span>Date And Time:</span>
+            <p class="date-time"></p>
+        </div>
+        <div class="detail-item">
+            <span>Pincode:</span>
+            <p class="pincode"></p>
+        </div>
+        <div class="detail-item">
+            <span>Message:</span>
+            <p class="noOf-pin"></p>
+        </div>
+    </div>
+    <input type="text" id="searchInput"  placeholder="&#128269; Filter"  />
+
+    <br>
+    <div class="filter-postDetails" >
+        <!-- <div class="grid-container">
+            <div class="details">Name:</div>
+            <div class="details">Branch Type:</div>
+            <div class="details">Delivery Status:</div>
+            <div class="details">District:</div>
+            <div class="details">Division:</div>
+        </div>
+        <div class="grid-container">
+            <div class="details">Name:</div>
+            <div class="details">Branch Type:</div>
+            <div class="details">Delivery Status:</div>
+            <div class="details">District:</div>
+            <div class="details">Division:</div>
+        </div>
+        <div class="grid-container">
+            <div class="details">Name:</div>
+            <div class="details">Branch Type:</div>
+            <div class="details">Delivery Status:</div>
+            <div class="details">District:</div>
+            <div class="details">Division:</div>
+        </div> -->
+
+    </div>
+</div>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script> -->
+    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD8aCZzhM25dJRKSkPErqOSKX-8AQ9Brgk&callback=initMap" async defer></script> -->
+
+    <script src="./cmd.js"></script>
+
+</body>
+
+</html>
